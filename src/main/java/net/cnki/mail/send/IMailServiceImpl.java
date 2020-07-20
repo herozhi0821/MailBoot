@@ -31,7 +31,7 @@ public class IMailServiceImpl implements IMailService {
     JavaMailSender mailSender;
 	
 	@Autowired
-    TemplateEngine templateEngine;
+    TemplateEngine templateEngine;//获取模板及引入参数
 	
 	@Value("${spring.mail.username}")
     private String from;
