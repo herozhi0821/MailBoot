@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="border: black;width: 400px;height: 400px;background: #2a6496">
+    尊敬的用户qq.com,您好！
+    您的会员账号是:q.com,该账号下的域名仅剩15天到期，请尽快续费！
+ 
+    <table border="1">
+    <tr>
+        <td>姓名</td>
+        <td th:text="${name}"></td>
+    </tr>
+    <tr>
+        <td>职位</td>
+        <td th:text="${posName}"></td>
+    </tr>
+    <tr>
+        <td>职称</td>
+        <td th:text="${joblevelName}"></td>
+    </tr>
+    <tr>
+        <td>部门</td>
+        <td th:text="${departmentName}"></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
