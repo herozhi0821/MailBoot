@@ -45,7 +45,7 @@ public class IMailServiceImpl implements IMailService {
 		//创建SimpleMailMessage对象
         SimpleMailMessage message = new SimpleMailMessage();
         //邮件发送人
-        message.setFrom("herozhi0821@163.com");
+        message.setFrom(from);
         //邮件接收人
         message.setTo(to);
         //邮件主题
